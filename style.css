@@ -1,0 +1,479 @@
+
+/* ===== PORTFOLIO IHSAN ===== */
+
+:root {
+    --Ihsan_biru: #1f5fe0;
+    --Ihsan_biru-tua: #0f1d45;
+    --Ihsan_biru-muda: #e8f0ff;
+    --Ihsan_teks: #1c2540;
+    --Ihsan_abu: #5b6478;
+    --Ihsan_garis: #dbe3f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    color: var(--Ihsan_teks);
+    line-height: 1.6;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Ihsan_wadah {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* ---------- HEADER / NAVBAR ---------- */
+
+#Ihsan_header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(15, 29, 69, .08);
+}
+
+#Ihsan_header .Ihsan_wadah {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+}
+
+.Ihsan_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--Ihsan_biru-tua);
+}
+
+.Ihsan_logo b {
+    color: var(--Ihsan_biru);
+}
+
+.Ihsan_logo svg {
+    width: 30px;
+    height: 30px;
+}
+
+.Ihsan_menu {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Ihsan_menu a {
+    font-size: .92rem;
+    font-weight: 500;
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+
+.Ihsan_menu a:hover,
+.Ihsan_menu a.Ihsan_aktif {
+    color: var(--Ihsan_biru);
+    border-color: var(--Ihsan_biru);
+}
+
+/* ---------- HERO ---------- */
+
+#Ihsan_hero {
+    background: linear-gradient(
+        120deg,
+        #fff 0%,
+        var(--Ihsan_biru-muda) 55%,
+        #c9dcff 100%
+    );
+    overflow: hidden;
+}
+
+#Ihsan_hero .Ihsan_wadah {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    min-height: 440px;
+}
+
+.Ihsan_sapaan {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.Ihsan_nama {
+    font-size: 3.3rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+    color: var(--Ihsan_biru-tua);
+}
+
+.Ihsan_nama span {
+    color: var(--Ihsan_biru);
+}
+
+.Ihsan_peran {
+    font-size: 1.15rem;
+    color: var(--Ihsan_abu);
+    margin: 8px 0 14px;
+}
+
+.Ihsan_intro {
+    max-width: 430px;
+    color: var(--Ihsan_abu);
+}
+
+.Ihsan_tombol-grup {
+    display: flex;
+    gap: 14px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.Ihsan_tombol {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .92rem;
+    border: 2px solid var(--Ihsan_biru);
+    transition: .2s;
+}
+
+.Ihsan_tombol-isi {
+    background: var(--Ihsan_biru);
+    color: #fff;
+}
+
+.Ihsan_tombol-isi:hover {
+    background: #174bb8;
+    border-color: #174bb8;
+}
+
+.Ihsan_tombol-garis {
+    background: #fff;
+    color: var(--Ihsan_biru);
+}
+
+.Ihsan_tombol-garis:hover {
+    background: var(--Ihsan_biru);
+    color: #fff;
+}
+
+.Ihsan_hero-gambar svg {
+    width: 100%;
+    max-width: 520px;
+    display: block;
+    margin-left: auto;
+}
+
+/* ---------- JUDUL SEKSI ---------- */
+
+.Ihsan_seksi {
+    padding: 56px 0 20px;
+}
+
+.Ihsan_judul {
+    font-size: 1.7rem;
+    margin: 0 0 6px;
+    color: var(--Ihsan_biru-tua);
+}
+
+.Ihsan_judul::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--Ihsan_biru);
+    margin-top: 6px;
+}
+
+/* ---------- ABOUT ---------- */
+
+.Ihsan_about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.Ihsan_about-teks p {
+    color: var(--Ihsan_abu);
+    max-width: 520px;
+}
+
+.Ihsan_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    margin-top: 16px;
+    font-size: .88rem;
+}
+
+.Ihsan_info div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Ihsan_info svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--Ihsan_biru);
+    flex-shrink: 0;
+}
+
+.Ihsan_foto {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 29, 69, .15);
+    background: var(--Ihsan_biru-muda);
+}
+
+.Ihsan_foto img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* ---------- SKILLS ---------- */
+
+.Ihsan_skill-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.Ihsan_skill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f6f8fd;
+    border: 1px solid var(--Ihsan_garis);
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.Ihsan_skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(31, 95, 224, .15);
+    background: #fff;
+}
+
+.Ihsan_ikon {
+    flex: 0 0 32px;
+    height: 32px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: .72rem;
+}
+
+/* ---------- PROJECTS ---------- */
+
+.Ihsan_proyek-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.Ihsan_kartu {
+    background: #fff;
+    border: 1px solid var(--Ihsan_garis);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .25s;
+}
+
+.Ihsan_kartu:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(15, 29, 69, .14);
+}
+
+.Ihsan_thumb {
+    height: 110px;
+    display: grid;
+    place-items: center;
+}
+
+.Ihsan_thumb svg {
+    width: 64px;
+    height: 64px;
+}
+
+.Ihsan_kartu-isi {
+    padding: 12px 14px 14px;
+}
+
+.Ihsan_kartu-isi h3 {
+    margin: 0;
+    font-size: .98rem;
+}
+
+.Ihsan_kartu-isi p {
+    margin: 4px 0 8px;
+    font-size: .82rem;
+    color: var(--Ihsan_abu);
+    line-height: 1.45;
+}
+
+.Ihsan_kartu-isi a {
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--Ihsan_biru);
+}
+
+.Ihsan_kartu-isi a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- FOOTER ---------- */
+
+#Ihsan_footer {
+    background: var(--Ihsan_biru-tua);
+    color: #fff;
+    margin-top: 56px;
+    padding: 26px 0 12px;
+}
+
+.Ihsan_footer-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Ihsan_footer-merek strong {
+    font-size: 1.15rem;
+}
+
+.Ihsan_footer-merek strong span {
+    color: #5b9bff;
+}
+
+.Ihsan_footer-merek p {
+    margin: 0;
+    font-size: .8rem;
+    color: #b8c4e6;
+}
+
+.Ihsan_footer-kontak {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    font-size: .85rem;
+    color: #dbe4ff;
+}
+
+.Ihsan_footer-kontak span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Ihsan_footer-kontak svg {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 980px) {
+
+    .Ihsan_skill-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Ihsan_proyek-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    #Ihsan_hero .Ihsan_wadah,
+    .Ihsan_about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Ihsan_hero-gambar {
+        order: -1;
+    }
+
+    .Ihsan_hero-gambar svg {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    .Ihsan_nama {
+        font-size: 2.4rem;
+    }
+
+    .Ihsan_menu {
+        gap: 14px;
+    }
+
+    .Ihsan_logo span {
+        display: none;
+    }
+
+    .Ihsan_skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    .Ihsan_proyek-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Ihsan_menu {
+        gap: 10px;
+    }
+
+    .Ihsan_menu a {
+        font-size: .82rem;
+    }
+
+}
